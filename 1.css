@@ -1,0 +1,136 @@
+body{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    height: 1000vh;
+    flex-direction: column;
+    border: 3px solid red;
+}@media(
+    max-width:1100px){
+        body{
+            background: red;
+        }
+    }
+@media(max-width:800px){
+    body{
+        background: purple;
+    }
+}
+@media(max-width:140px){
+    body{
+        background: green;
+        color: black;
+    }
+}
+    
+
+.h1{
+    color: red;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+}
+span{
+    background: black;
+    color: white;
+    white-space: nowrap;
+    position: absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1rem;
+    display: none;
+    border-radius:30px;
+}
+.h1:hover span{
+    display: block;
+}
+.h2{
+    text-align: center;
+    margin-top: 5rem;
+    border: 3px solid red;
+    /* width: 500px; */
+    max-width: 900px;
+    text-align: center;
+}
+.img1{
+    width: 900px;
+    max-width:100%;
+    filter: blur(5px) ;
+    filter: url(../image/Telegram/Telegram2.jpg);
+    filter: brightness(100%);
+    filter: contrast(50%);
+    filter: hue-rotate(500deg);
+    filter: invert(100%);
+    filter:opacity(50%) ;
+    filter: saturate(3);
+    filter: sepia(40%);
+    filter: drop-shadow(8px 12px 14px red);
+}
+.div1{
+    border: 3px solid red;
+    border-radius: 30px;
+    overflow: hidden;
+    /* display: block; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    
+    position: relative;
+    
+}
+.img2{
+    width: 100%;
+    /* height: ; */
+}
+.div2{
+    /* width: 100%; */
+    /* height: 100%; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    right:0;
+    /* height: 0; */
+    /* width: 0;     */
+    background: teal;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    transition: 4s; 
+    transform: scale(0);
+}
+.div1:hover .div2{
+    /* height: 100%; */
+    /* width: 100%; */
+    border-radius: 20%;
+    transform: scale(1);
+
+}
+.p1{
+    column-count: 3 ;
+    column-gap: 5rem;
+}
+.p2{
+    column-count:4 ;
+    column-gap: 5rem;
+    column-rule-width: 2px;
+    column-rule:3px  solid red;
+    
+}
+.p3{
+     column-count: 5;
+     column-gap: 10rem;
+     column-width:3px;
+     column-rule: unset red;
+}
+.div4{
+    border: 3px solid red;
+    background-color: red;
+    /* display: block; */
+}
+
+
